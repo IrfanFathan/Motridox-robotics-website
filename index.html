@@ -4,8 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motridox Robotics</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/Motridox-robotics-website/styles/index.css">
 </head>
 <body>
-    
+    <!-- Nav bar section -->
+    <header class="bg-white shadow-lg normal-font">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+              <a class="block text-black" href="#">
+                <span class="sr-only">Motridox Robotics</span>
+                <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- SVG logo path here -->
+                  <path d="..." fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+      
+            <div class="hidden md:block">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-base font-medium text-gray-700">
+                  <li>
+                    <a class="hover:text-teal-600 transition" href="#">About</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-teal-600 transition" href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-teal-600 transition" href="#">Services</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-teal-600 transition" href="#">Projects</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-teal-600 transition" href="#">Blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      
+            <div class="flex items-center gap-4">
+              <div class="sm:flex sm:gap-4">
+                <a
+                  class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-teal-700"
+                  href="#"
+                >
+                  Login
+                </a>
+                <div class="hidden sm:flex">
+                  <a
+                    class="rounded-md border border-teal-600 px-5 py-2.5 text-sm font-medium text-teal-600 hover:bg-teal-600 hover:text-white transition"
+                    href="#"
+                  >
+                    Register
+                  </a>
+                </div>
+              </div>
+      
+              <div class="block md:hidden">
+                <button id="mobile-menu-btn" class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Dropdown Menu -->
+          <div id="mobile-menu" class="hidden md:hidden">
+            <nav aria-label="Mobile Navigation">
+              <ul class="mt-4 space-y-4 text-base font-medium text-gray-700">
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">About</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Careers</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Services</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Projects</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Login</a>
+                </li>
+                <li>
+                  <a class="hover:text-teal-600 transition" href="#">Register</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </header>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-screen bg-gray-900 normal-font">
+    <!-- Video Background -->
+    <video class="absolute inset-0 w-full h-full object-cover rounded-b-3xl" autoplay muted loop>
+        <source src="/Motridox-robotics-website/asstes/video/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-b-3xl"></div>
+
+    <!-- Content Over the Video -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+            Welcome to <span class="text-teal-400">Motridox Robotics</span>
+        </h1>
+        <p class="text-lg sm:text-xl max-w-2xl mb-8">
+            Innovating the future with cutting-edge robotics solutions. Join us in exploring the next level of automation.
+        </p>
+        <div class="flex gap-4">
+            <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition duration-300">
+                Learn More
+            </a>
+            <a href="#" class="bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-6 rounded-md transition duration-300">
+                Our Projects
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Link to external JavaScript -->
+    <script src="/Motridox-robotics-website/scripts/index.js"></script>
 </body>
 </html>
