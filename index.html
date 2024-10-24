@@ -1,167 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motridox Robotics</title>
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- css link -->
-    <link rel="stylesheet" href="/Motridox-robotics-website/styles/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motridox Robotics</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css link -->
+  <link rel="stylesheet" href="/Motridox-robotics-website/styles/index.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Inline Css -->
+  <style>
+    .normal-font {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Nav bar section -->
-    <header class="bg-white shadow-lg normal-font">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
-            <div class="md:flex md:items-center md:gap-12">
-              <a class="block text-black" href="#">
-                <span class="sr-only">Motridox Robotics</span>
-                <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <!-- SVG logo path here -->
-                  <path d="..." fill="currentColor"/>
-                </svg>
+  <!-- Nav bar section -->
+  <header class="bg-white shadow-lg normal-font">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a class="block text-black" href="#">
+            <span class="sr-only">Motridox Robotics</span>
+            <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- SVG logo path here -->
+              <path d="..." fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hidden md:block">
+          <nav aria-label="Global">
+            <ul class="flex items-center gap-6 text-base font-medium text-gray-700">
+              <li>
+                <a class="hover:text-teal-600 transition" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-teal-600 transition" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="hover:text-teal-600 transition" href="#">Services</a>
+              </li>
+              <li>
+                <a class="hover:text-teal-600 transition" href="ongoing-projects">Projects</a>
+              </li>
+              <li>
+                <a class="hover:text-teal-600 transition" href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-teal-700"
+              href="#">
+              Login
+            </a>
+            <div class="hidden sm:flex">
+              <a class="rounded-md border border-teal-600 px-5 py-2.5 text-sm font-medium text-teal-600 hover:bg-teal-600 hover:text-white transition"
+                href="#">
+                Register
               </a>
             </div>
-      
-            <div class="hidden md:block">
-              <nav aria-label="Global">
-                <ul class="flex items-center gap-6 text-base font-medium text-gray-700">
-                  <li>
-                    <a class="hover:text-teal-600 transition" href="#">About</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-teal-600 transition" href="#">Careers</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-teal-600 transition" href="#">Services</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-teal-600 transition" href="ongoing-projects">Projects</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-teal-600 transition" href="#">Blog</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-      
-            <div class="flex items-center gap-4">
-              <div class="sm:flex sm:gap-4">
-                <a
-                  class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-teal-700"
-                  href="#"
-                >
-                  Login
-                </a>
-                <div class="hidden sm:flex">
-                  <a
-                    class="rounded-md border border-teal-600 px-5 py-2.5 text-sm font-medium text-teal-600 hover:bg-teal-600 hover:text-white transition"
-                    href="#"
-                  >
-                    Register
-                  </a>
-                </div>
-              </div>
-      
-              <div class="block md:hidden">
-                <button id="mobile-menu-btn" class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
           </div>
 
-          <!-- Mobile Dropdown Menu -->
-          <div id="mobile-menu" class="hidden md:hidden">
-            <nav aria-label="Mobile Navigation">
-              <ul class="mt-4 space-y-4 text-base font-medium text-gray-700">
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">About</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Careers</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Services</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Projects</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Blog</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Login</a>
-                </li>
-                <li>
-                  <a class="hover:text-teal-600 transition" href="#">Register</a>
-                </li>
-              </ul>
-            </nav>
+          <div class="block md:hidden">
+            <button id="mobile-menu-btn" class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
-
         </div>
-      </header>
-<!-- Hero Section -->
-<section class="relative w-full h-screen bg-gray-900 normal-font">
-  <!-- Web Video Background -->
-  <video class="absolute inset-0 w-full h-full object-cover rounded-b-3xl" autoplay muted loop>
-    <source src="https://videos.pexels.com/video-files/8466300/8466300-uhd_2560_1440_25fps.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+      </div>
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-50 rounded-b-3xl"></div>
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <nav aria-label="Mobile Navigation">
+          <ul class="mt-4 space-y-4 text-base font-medium text-gray-700">
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">About</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Careers</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Services</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Projects</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Login</a>
+            </li>
+            <li>
+              <a class="hover:text-teal-600 transition" href="#">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-  <!-- Content Over the Video -->
-  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative w-full h-screen bg-gray-900 normal-font">
+    <!-- Web Video Background -->
+    <video class="absolute inset-0 w-full h-full object-cover rounded-b-3xl" autoplay muted loop>
+      <source src="https://videos.pexels.com/video-files/8466300/8466300-uhd_2560_1440_25fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-b-3xl"></div>
+
+    <!-- Content Over the Video -->
+    <div
+      class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-          Welcome to <span class="text-teal-400">Motridox Robotics</span>
+        Welcome to <span class="text-teal-400">Motridox Robotics</span>
       </h1>
       <p class="text-lg sm:text-xl max-w-2xl mb-8">
-          Innovating the future with cutting-edge robotics solutions. Join us in exploring the next level of automation.
+        Innovating the future with cutting-edge robotics solutions. Join us in exploring the next level of automation.
       </p>
       <div class="flex gap-4">
-          <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition duration-300">
-              Learn More
-          </a>
-          <a href="#" class="bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-6 rounded-md transition duration-300">
-              Our Projects
-          </a>
+        <a href="#"
+          class="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition duration-300">
+          Learn More
+        </a>
+        <a href="#"
+          class="bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-6 rounded-md transition duration-300">
+          Our Projects
+        </a>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- About Us Modern Section -->
-<section class="bg-white dark:bg-gray-900 normal-font">
-  <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-    
-    <!-- Left Column: Text Content -->
-    <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We are pushing the boundaries of innovation</h2>
-      <p class="mb-4">
-        We are a dedicated team with a vision to create innovative solutions that enhance the way people live and interact with technology. Our journey has been fueled by passion and a drive to push the boundaries of what's possible.
-      </p>
-      <p class="mb-4">
-        Since our inception, we have been on a relentless mission to deliver transformative technological advancements. Our expertise spans a range of industries, allowing us to tackle some of the most complex challenges in today's world.
-      </p>
-      <p>
-        We believe in the power of collaboration and innovation to unlock new opportunities. Our goal is to empower businesses, communities, and individuals with groundbreaking solutions that redefine the future.
-      </p>
+  <!-- About Us Modern Section -->
+  <section class="bg-white dark:bg-gray-900 normal-font">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+      <!-- Left Column: Text Content -->
+      <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We are pushing the
+          boundaries of innovation</h2>
+        <p class="mb-4">
+          We are a dedicated team with a vision to create innovative solutions that enhance the way people live and
+          interact with technology. Our journey has been fueled by passion and a drive to push the boundaries of what's
+          possible.
+        </p>
+        <p class="mb-4">
+          Since our inception, we have been on a relentless mission to deliver transformative technological
+          advancements. Our expertise spans a range of industries, allowing us to tackle some of the most complex
+          challenges in today's world.
+        </p>
+        <p>
+          We believe in the power of collaboration and innovation to unlock new opportunities. Our goal is to empower
+          businesses, communities, and individuals with groundbreaking solutions that redefine the future.
+        </p>
+      </div>
+
+      <!-- Right Column: Images -->
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <img class="w-full rounded-lg" src="/Motridox-robotics-website/asstes/image/about.jpg" alt="About Image 1">
+        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/Motridox-robotics-website/asstes/image/office-image.jpg"
+          alt="About Image 2">
+      </div>
+
     </div>
 
-    <!-- Right Column: Images -->
-    <div class="grid grid-cols-2 gap-4 mt-8">
-      <img class="w-full rounded-lg" src="/Motridox-robotics-website/asstes/image/about.jpg" alt="About Image 1">
-      <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/Motridox-robotics-website/asstes/image/office-image.jpg" alt="About Image 2">
-    </div>
-    
-  </div>
-
-  <!-- Additional Content: Team and Achievements
+    <!-- Additional Content: Team and Achievements
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
     <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team & Achievements</h2>
     <p class="mb-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -172,269 +190,275 @@
     </p>
   </div> -->
 
-  <!-- Logo Cloud: Our Partners and Clients -->
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Trusted by Industry Leaders</h2>
-    <p class="mb-6 font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
-      We are proud to collaborate with some of the most innovative and forward-thinking companies around the world.
-    </p>
+    <!-- Logo Cloud: Our Partners and Clients -->
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">Trusted by
+        Industry Leaders</h2>
+      <p class="mb-6 font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
+        We are proud to collaborate with some of the most innovative and forward-thinking companies around the world.
+      </p>
 
-    <!-- Logo Cloud -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 items-center justify-center">
-      <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 1">
-    <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 2">
-    <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 3">
-    <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 4">
-    <!-- <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 5"> -->
-    <!-- <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 6">
+      <!-- Logo Cloud -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 items-center justify-center">
+        <img src="https://via.placeholder.com/150x50"
+          class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 1">
+        <img src="https://via.placeholder.com/150x50"
+          class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 2">
+        <img src="https://via.placeholder.com/150x50"
+          class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 3">
+        <img src="https://via.placeholder.com/150x50"
+          class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 4">
+        <!-- <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 5"> -->
+        <!-- <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 6">
     <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 7">
     <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 8">
     <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 9">
     <img src="https://via.placeholder.com/150x50" class="h-12 mx-auto transition-transform duration-300 hover:scale-110" alt="Client Logo 10"> -->
-  </div>
-  </div>
-</section>
-
-<!-- Ongoing Projects -->
-<section id="ongoing-projects" class="bg-gray-100 py-8 md:py-12 px-4 md:px-0 normal-font">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-semibold mb-8">Ongoing Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Project 1 -->
-      <div class="group overflow-hidden relative">
-        <div class="video-container">
-          <video class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out" muted loop autoplay>
-            <source src="/Motridox-robotics-website/assets/video/hero.mp4" type="video/mp4">
-            <source src="path/to/project1-video1.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="p-4 md:p-6">
-          <h3 class="text-2xl font-bold mb-2">NASA Space Apps Challenge 2024</h3>
-          <p class="text-gray-500 mb-6 text-sm">Innovative Solutions for Farmers</p>
-          <p class="text-gray-600 mb-4">A web app designed to help farmers analyze farms using NASA data to address water-related challenges.</p>
-          <a href="#" class="text-blue-500 hover:underline">Learn more</a>
-        </div>
       </div>
-
-      <!-- Project 2 -->
-      <div class="group overflow-hidden relative">
-        <div class="video-container">
-          <video class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out" muted loop autoplay>
-            <source src="/Motridox-robotics-website/assets/video/hero.mp4" type="video/mp4">
-            <source src="path/to/project2-video1.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="p-4 md:p-6">
-          <h3 class="text-2xl font-bold mb-2">Automatic Gate System</h3>
-          <p class="text-gray-500 mb-6 text-sm">IoT-Based Security Solution</p>
-          <p class="text-gray-600 mb-4">An IoT-based system that automates gate opening and closing for security purposes.</p>
-          <a href="#" class="text-blue-500 hover:underline">Learn more</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="group overflow-hidden relative">
-        <div class="video-container">
-          <video class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out" muted loop autoplay>
-            <source src="path/to/project3-video1.mp4" type="video/mp4">
-            <source src="path/to/project3-video1.webm" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="p-4 md:p-6">
-          <h3 class="text-2xl font-bold mb-2">Attendance System for Tuition Centers</h3>
-          <p class="text-gray-500 mb-6 text-sm">Streamlined Attendance Management</p>
-          <p class="text-gray-600 mb-4">An attendance marking system for tuition centers with automated reports and SMS notifications.</p>
-          <a href="#" class="text-blue-500 hover:underline">Learn more</a>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Ongoing Projects -->
+  <section id="ongoing-projects" class="bg-gray-100 py-8 md:py-12 px-4 md:px-0 normal-font">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Ongoing Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<!-- Services Section -->
-<section id="services" class="py-16 bg-gray-50 normal-font">
-  <div class="container mx-auto text-center">
-    <!-- Title -->
-    <h2 class="text-4xl font-bold mb-4 text-gray-800">Our Services</h2>
-    <p class="text-lg text-gray-600 mb-12">Explore the cutting-edge solutions we offer, from robotics to AI and IoT systems.</p>
-
-    <!-- Services Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      
-      <!-- Service 1: Custom Robotic Solutions -->
-      <div class="p-6 hover:scale-105 transition-transform">
-        <div class="mb-4 flex justify-center">
-          <!-- Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Custom Robotic Solutions</h3>
-        <p class="text-gray-600">Tailored robotic systems for your business needs to automate and innovate.</p>
-      </div>
-      
-      <!-- Service 2: AI-Based Systems -->
-      <div class="p-6 hover:scale-105 transition-transform">
-        <div class="mb-4 flex justify-center">
-          <!-- Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1M7 10h.01M12 10v2M21 10h.01M4 15h16M4 12v4h16v-4M3 19v2M7 19v2m10-2v2m4-2v2" />
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">AI-Based Systems</h3>
-        <p class="text-gray-600">Smart AI systems to improve efficiency and decision-making processes.</p>
-      </div>
-
-      <!-- Service 3: IoT Products -->
-      <div class="p-6 hover:scale-105 transition-transform">
-        <div class="mb-4 flex justify-center">
-          <!-- Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A7.5 7.5 0 115.12 6.196M12 3v1m0 16v1m7.071-5.929l-.707.707M4.93 4.93l-.707.707M21 12h1m-18 0H2m1.636 7.071l-.707-.707M16.95 7.05l-.707-.707" />
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">IoT Products</h3>
-        <p class="text-gray-600">Connected devices to enable smarter business operations and home automation.</p>
-      </div>
-
-      <!-- Service 4: Consulting -->
-      <div class="p-6 hover:scale-105 transition-transform">
-        <div class="mb-4 flex justify-center">
-          <!-- Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5v7h7M7 19h10m-6 4v-4m2 4v-4" />
-          </svg>
-        </div>
-        <h3 class="text-lg font-semibold text-gray-800 mb-2">Consulting</h3>
-        <p class="text-gray-600">Expert advice and guidance to help you implement robotics and automation.</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<section class="bg-white normal-font">
-  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-    <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      Read trusted reviews from our customers
-    </h2>
-    <p class="text-center mt-2 text-lg text-gray-500">
-      What our clients say about our services.
-    </p>
-
-    <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-      <blockquote class="p-6 sm:p-8">
-        <div class="flex items-center gap-4">
-          <img
-            alt=""
-            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-            class="size-14 rounded-full object-cover"
-          />
-
-          <div>
-            <div class="flex justify-center gap-0.5 text-green-500">
-              <!-- Rating Stars -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <!-- Repeat the above SVG for remaining stars -->
-            </div>
-            <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+        <!-- Project 1 -->
+        <div class="group overflow-hidden relative">
+          <div class="video-container">
+            <video
+              class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out"
+              muted loop autoplay>
+              <source src="/Motridox-robotics-website/assets/video/hero.mp4" type="video/mp4">
+              <source src="path/to/project1-video1.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="text-2xl font-bold mb-2">NASA Space Apps Challenge 2024</h3>
+            <p class="text-gray-500 mb-6 text-sm">Innovative Solutions for Farmers</p>
+            <p class="text-gray-600 mb-4">A web app designed to help farmers analyze farms using NASA data to address
+              water-related challenges.</p>
+            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
           </div>
         </div>
 
-        <p class="mt-4 text-gray-700">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-          consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-          error officiis atque voluptates magnam!
-        </p>
-      </blockquote>
+        <!-- Project 2 -->
+        <div class="group overflow-hidden relative">
+          <div class="video-container">
+            <video
+              class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out"
+              muted loop autoplay>
+              <source src="/Motridox-robotics-website/assets/video/hero.mp4" type="video/mp4">
+              <source src="path/to/project2-video1.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="text-2xl font-bold mb-2">Automatic Gate System</h3>
+            <p class="text-gray-500 mb-6 text-sm">IoT-Based Security Solution</p>
+            <p class="text-gray-600 mb-4">An IoT-based system that automates gate opening and closing for security
+              purposes.</p>
+            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+          </div>
+        </div>
 
-      <!-- You can repeat this structure for additional testimonials -->
+        <!-- Project 3 -->
+        <div class="group overflow-hidden relative">
+          <div class="video-container">
+            <video
+              class="project-video w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out"
+              muted loop autoplay>
+              <source src="path/to/project3-video1.mp4" type="video/mp4">
+              <source src="path/to/project3-video1.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-4 md:p-6">
+            <h3 class="text-2xl font-bold mb-2">Attendance System for Tuition Centers</h3>
+            <p class="text-gray-500 mb-6 text-sm">Streamlined Attendance Management</p>
+            <p class="text-gray-600 mb-4">An attendance marking system for tuition centers with automated reports and
+              SMS notifications.</p>
+            <a href="#" class="text-blue-500 hover:underline">Learn more</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-50 normal-font">
+    <div class="container mx-auto text-center">
+      <!-- Title -->
+      <h2 class="text-4xl font-bold mb-4 text-gray-800">Our Services</h2>
+      <p class="text-lg text-gray-600 mb-12">Explore the cutting-edge solutions we offer, from robotics to AI and IoT
+        systems.</p>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+        <!-- Service 1: Custom Robotic Solutions -->
+        <div class="p-6 hover:scale-105 transition-transform">
+          <div class="mb-4 flex justify-center">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Custom Robotic Solutions</h3>
+          <p class="text-gray-600">Tailored robotic systems for your business needs to automate and innovate.</p>
+        </div>
+
+        <!-- Service 2: AI-Based Systems -->
+        <div class="p-6 hover:scale-105 transition-transform">
+          <div class="mb-4 flex justify-center">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 10h1M7 10h.01M12 10v2M21 10h.01M4 15h16M4 12v4h16v-4M3 19v2M7 19v2m10-2v2m4-2v2" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">AI-Based Systems</h3>
+          <p class="text-gray-600">Smart AI systems to improve efficiency and decision-making processes.</p>
+        </div>
+
+        <!-- Service 3: IoT Products -->
+        <div class="p-6 hover:scale-105 transition-transform">
+          <div class="mb-4 flex justify-center">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5.121 17.804A7.5 7.5 0 115.12 6.196M12 3v1m0 16v1m7.071-5.929l-.707.707M4.93 4.93l-.707.707M21 12h1m-18 0H2m1.636 7.071l-.707-.707M16.95 7.05l-.707-.707" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">IoT Products</h3>
+          <p class="text-gray-600">Connected devices to enable smarter business operations and home automation.</p>
+        </div>
+
+        <!-- Service 4: Consulting -->
+        <div class="p-6 hover:scale-105 transition-transform">
+          <div class="mb-4 flex justify-center">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-teal-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5v7h7M7 19h10m-6 4v-4m2 4v-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Consulting</h3>
+          <p class="text-gray-600">Expert advice and guidance to help you implement robotics and automation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white normal-font">
+    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        Read trusted reviews from our customers
+      </h2>
+      <p class="text-center mt-2 text-lg text-gray-500">
+        What our clients say about our services.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+        <blockquote class="p-6 sm:p-8">
+          <div class="flex items-center gap-4">
+            <img alt=""
+              src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+              class="size-14 rounded-full object-cover" />
+
+            <div>
+              <div class="flex justify-center gap-0.5 text-green-500">
+                <!-- Rating Stars -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <!-- Repeat the above SVG for remaining stars -->
+              </div>
+              <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+            </div>
+          </div>
+
+          <p class="mt-4 text-gray-700">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
+            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
+            error officiis atque voluptates magnam!
+          </p>
+        </blockquote>
+
+        <!-- You can repeat this structure for additional testimonials -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <div class="space-y-4 max-w-2xl mx-auto py-10 normal-font">
+    <h2 class="text-3xl font-semibold mb-8 text-center">FAQ</h2>
+    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100">
+        <h2 class="font-medium text-lg md:text-xl">What is the purpose of your project?</h2>
+
+        <svg class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+
+      <p class="mt-4 px-4 leading-relaxed text-gray-800">
+        Our project aims to leverage technology to solve real-world problems. We focus on creating innovative solutions
+        for sustainable agriculture and improving efficiency in various sectors.
+      </p>
+    </details>
+
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100">
+        <h2 class="font-medium text-lg md:text-xl">How can I get involved?</h2>
+
+        <svg class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+
+      <p class="mt-4 px-4 leading-relaxed text-gray-800">
+        We welcome collaboration from individuals and organizations. You can reach out through our contact page for
+        opportunities to participate in our initiatives or contribute to our projects.
+      </p>
+    </details>
+
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100">
+        <h2 class="font-medium text-lg md:text-xl">What technologies are you using?</h2>
+
+        <svg class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </summary>
+
+      <p class="mt-4 px-4 leading-relaxed text-gray-800">
+        Our team utilizes a variety of technologies, including IoT devices, cloud computing, and data analytics, to
+        create our solutions. We also emphasize the use of sustainable and open-source tools whenever possible.
+      </p>
+    </details>
   </div>
-</section>
 
 
-<!-- FAQ -->
-<div class="space-y-4 max-w-2xl mx-auto py-10 normal-font">
-  <h2 class="text-3xl font-semibold mb-8 text-center">FAQ</h2>
-  <details class="group [&_summary::-webkit-details-marker]:hidden" open>
-    <summary
-      class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100"
-    >
-      <h2 class="font-medium text-lg md:text-xl">What is the purpose of your project?</h2>
-
-      <svg
-        class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-
-    <p class="mt-4 px-4 leading-relaxed text-gray-800">
-      Our project aims to leverage technology to solve real-world problems. We focus on creating innovative solutions for sustainable agriculture and improving efficiency in various sectors.
-    </p>
-  </details>
-
-  <details class="group [&_summary::-webkit-details-marker]:hidden">
-    <summary
-      class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100"
-    >
-      <h2 class="font-medium text-lg md:text-xl">How can I get involved?</h2>
-
-      <svg
-        class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-
-    <p class="mt-4 px-4 leading-relaxed text-gray-800">
-      We welcome collaboration from individuals and organizations. You can reach out through our contact page for opportunities to participate in our initiatives or contribute to our projects.
-    </p>
-  </details>
-
-  <details class="group [&_summary::-webkit-details-marker]:hidden">
-    <summary
-      class="flex cursor-pointer items-center justify-between gap-2 rounded-lg bg-white p-4 text-gray-900 border border-gray-300 shadow-md transition-all duration-300 hover:bg-gray-100"
-    >
-      <h2 class="font-medium text-lg md:text-xl">What technologies are you using?</h2>
-
-      <svg
-        class="w-5 h-5 shrink-0 transition duration-300 group-open:rotate-180"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-
-    <p class="mt-4 px-4 leading-relaxed text-gray-800">
-      Our team utilizes a variety of technologies, including IoT devices, cloud computing, and data analytics, to create our solutions. We also emphasize the use of sustainable and open-source tools whenever possible.
-    </p>
-  </details>
-</div>
-
-
-<!-- footer -->
-<footer class="bg-white dark:bg-gray-900 normal-font ">
+  <!-- footer -->
+  <footer class="bg-white dark:bg-gray-900 normal-font ">
     <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-md">
         <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-white sm:text-4xl">
@@ -445,14 +469,10 @@
             <label class="sr-only" for="email">Email</label>
             <input
               class="normal-font w-full rounded-full border-gray-200 bg-gray-100 p-4 pr-32 text-sm font-medium dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-              id="email"
-              type="email"
-              placeholder="Enter your email"
-            />
+              id="email" type="email" placeholder="Enter your email" />
             <button
               class="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
-              type="submit"
-            >
+              type="submit">
               Subscribe
             </button>
           </div>
@@ -460,35 +480,100 @@
       </div>
       <div class="mt-16 flex justify-center gap-8">
         <p class="text-center text-gray-500 dark:text-gray-400 max-w-2xl">
-          Subscribe to get the latest news on our groundbreaking tech innovations and be the first to know about upcoming events, product launches, and more!
+          Subscribe to get the latest news on our groundbreaking tech innovations and be the first to know about
+          upcoming events, product launches, and more!
         </p>
       </div>
       <div class="mt-8 flex justify-center gap-4">
         <a href="#" class="text-gray-700 dark:text-white hover:text-blue-500 transition">
           <span class="sr-only">Facebook</span>
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="...Facebook SVG path..."/>
+            <path d="...Facebook SVG path..." />
           </svg>
         </a>
         <a href="#" class="text-gray-700 dark:text-white hover:text-blue-500 transition">
           <span class="sr-only">Instagram</span>
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="...Instagram SVG path..."/>
+            <path d="...Instagram SVG path..." />
           </svg>
         </a>
         <a href="#" class="text-gray-700 dark:text-white hover:text-blue-500 transition">
           <span class="sr-only">Twitter</span>
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="...Twitter SVG path..."/>
+            <path d="...Twitter SVG path..." />
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  
 
 
-    <!-- Link to external JavaScript -->
-    <script src="/Motridox-robotics-website/scripts/index.js"></script>
+
+  <!-- Link to external JavaScript -->
+  <script src="/Motridox-robotics-website/scripts/index.js">
+
+    // JavaScript to toggle the mobile menu
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+
+      // Toggle between hidden and block (show or hide the menu)
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('block');
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('block');
+      }
+    });
+
+
+    // Email validation
+    function validateEmail() {
+      const email = document.getElementById('email').value;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+      return true;
+    }
+
+    document.querySelectorAll('.video-container').forEach(container => {
+      const videos = [
+        'Motridox-robotics-website\asstes\video\hero.mp4',
+        'path/to/project1-video2.mp4',
+        'path/to/project1-video3.mp4'
+      ]; // Define the array of videos
+
+      let currentVideoIndex = 0;
+      const videoElement = container.querySelector('video');
+
+      // Autoplay video on hover
+      container.addEventListener('mouseenter', () => {
+        videoElement.play();
+      });
+
+      // Pause video when mouse leaves the video container
+      container.addEventListener('mouseleave', () => {
+        videoElement.pause();
+      });
+
+      // Loop through the videos
+      videoElement.addEventListener('ended', () => {
+        currentVideoIndex = (currentVideoIndex + 1) % videos.length; // Loop to the next video
+        videoElement.src = videos[currentVideoIndex]; // Change the video source
+        videoElement.play(); // Start playing the new video
+      });
+    });
+
+
+    // carsoul
+
+
+
+
+  </script>
 </body>
+
 </html>
